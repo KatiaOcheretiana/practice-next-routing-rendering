@@ -2,8 +2,8 @@ import NewsList from "@/components/news-list";
 import { getLatestNews } from "@/lib/news";
 import React from "react";
 
-export default function DefaultPage() {
-  const latestNews = getLatestNews();
+export default async function DefaultPage() {
+  const latestNews = await getLatestNews();
 
   return (
     <>
